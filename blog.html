@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blog - Kerem Özcan</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog — Kerem Özcan</title>
+  <meta name="description" content="Blog posts by Kerem Özcan." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <h1>Blog</h1>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <a href="/">Kerem Özcan</a>
+        <span class="badge">Blog</span>
+      </div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a class="btn" href="mailto:you@example.com">Contact</a>
+      </div>
+    </div>
 
-  <ul>
-    <li><a href="posts/first-post.html">Why I Built This Blog</a></li>
-  </ul>
+    <div class="hero">
+      <h1>Blog</h1>
+      <p>Articles, notes, and project updates.</p>
 
-  <a href="/">Back to Home</a>
+      <div class="card">
+        <h2>Posts</h2>
+        <div class="list">
+          <a class="postlink" href="/posts/2026-01-first-post.html">
+            <div>
+              <strong>Why I Built This Blog</strong><br />
+              <small>Getting started and what to expect.</small>
+            </div>
+            <small>2026-01-12</small>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <hr class="sep" />
+        <a href="/">← Back to home</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
