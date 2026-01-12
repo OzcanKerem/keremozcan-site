@@ -19,7 +19,6 @@ body{
   background: var(--bg);
 }
 
-/* Full-page background image + overlays */
 .bg{
   position: fixed;
   inset: 0;
@@ -355,16 +354,13 @@ a:hover{color:var(--accent)}
   flex-wrap: wrap;
 }
 
-/* Responsive */
 @media (min-width: 900px){
   .project{grid-column: span 4;}
   .about-grid .card{grid-column: span 4;}
 }
 
 @media (max-width: 980px){
-  .hero{
-    grid-template-columns: 1fr;
-  }
+  .hero{grid-template-columns: 1fr;}
 }
 
 @media (max-width: 520px){
@@ -372,13 +368,7 @@ a:hover{color:var(--accent)}
     font-size: 40px;
     max-width: 22ch;
   }
-  .mini-grid{
-    grid-template-columns: 1fr;
-  }
-  .nav{
-    align-items: flex-start;
-  }
-  .brand{
-    min-width: unset;
-  }
+  .mini-grid{grid-template-columns: 1fr;}
+  .nav{align-items: flex-start;}
+  .brand{min-width: unset;}
 }
