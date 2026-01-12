@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kerem Özcan</title>
-  <meta charset="utf-8">
+  <meta name="description" content="Personal website and blog of Kerem Özcan." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <h1>Kerem Özcan</h1>
-  <p>Electrical & Electronics Engineer</p>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <span>Kerem Özcan</span>
+        <span class="badge">keremozcan.net</span>
+      </div>
+      <div class="links">
+        <a href="/blog.html">Blog</a>
+        <a class="btn" href="mailto:you@example.com">Contact</a>
+      </div>
+    </div>
 
-  <p><a href="blog.html">Go to Blog</a></p>
+    <div class="hero">
+      <h1>Engineer. Builder. Writer.</h1>
+      <p>
+        I share notes on engineering, projects, and practical learnings.
+        This site is hosted on GitHub Pages and managed directly from GitHub.
+      </p>
+      <div class="kpis">
+        <span class="pill">Electronics</span>
+        <span class="pill">FPGA</span>
+        <span class="pill">Embedded</span>
+        <span class="pill">Signal Processing</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card span6">
+        <h2>Latest post</h2>
+        <p>Start building your archive of notes and projects.</p>
+        <div class="meta">
+          <a class="btn" href="/posts/2026-01-first-post.html">Read the latest</a>
+          <a class="btn" href="/blog.html">All posts</a>
+        </div>
+      </div>
+
+      <div class="card span6">
+        <h2>About</h2>
+        <p>
+          Short bio goes here. Add your focus areas, what you are working on, and how to reach you.
+        </p>
+        <div class="meta">
+          <a class="btn" href="/blog.html">Browse blog</a>
+        </div>
+      </div>
+
+      <div class="card span4">
+        <h2>Projects</h2>
+        <p>List 2–3 key projects with links.</p>
+      </div>
+      <div class="card span4">
+        <h2>CV</h2>
+        <p>Optional: add a PDF link later (e.g., /assets/cv.pdf).</p>
+      </div>
+      <div class="card span4">
+        <h2>Notes</h2>
+        <p>Quick posts, references, and summaries.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <hr class="sep" />
+      © <span id="y"></span> Kerem Özcan. Built on GitHub Pages.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
