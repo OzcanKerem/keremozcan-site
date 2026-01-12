@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why I Built This Blog</title>
+  <meta name="description" content="First post on keremozcan.net" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <a href="/">Kerem Özcan</a>
+        <span class="badge">Post</span>
+      </div>
+      <div class="links">
+        <a href="/blog.html">Blog</a>
+        <a class="btn" href="mailto:you@example.com">Contact</a>
+      </div>
+    </div>
+
+    <div class="card article">
+      <h1>Why I Built This Blog</h1>
+      <div class="date">2026-01-12</div>
+
+      <p>
+        This site is a lightweight place to publish engineering notes and project updates
+        without paying for monthly hosting.
+      </p>
+
+      <p>
+        Next: I will add project pages, a CV PDF, and a simple post template to write faster.
+      </p>
+
+      <hr class="sep" />
+      <a class="btn" href="/blog.html">← Back to blog</a>
+    </div>
+
+    <div class="footer">
+      <hr class="sep" />
+      © <span id="y"></span> Kerem Özcan
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
