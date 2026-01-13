@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me — Kerem Özcan</title>
+  <meta name="description" content="About Kerem Özcan — academic background, research interests, and applied engineering experience." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <div class="container">
+    <!-- TOP NAVIGATION -->
+    <header class="nav">
+      <nav class="links" aria-label="Primary navigation">
+        <a class="link" href="./">Home</a>
+        <a class="link" href="./about.html">About Me</a>
+        <a class="link" href="./projects.html">Projects</a>
+        <a class="link" href="./assets/cv.pdf">CV</a>
+        <a class="btn ghost" href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p>
+          Electrical and Electronics Engineer focused on research-driven engineering,
+          spanning digital systems, photonics, and applied hardware development.
+        </p>
+      </div>
+
+      <article class="card article">
+        <h1>Kerem Özcan</h1>
+        <div class="date">Electrical & Electronics Engineer • M.Sc. Student @ Ankara Yıldırım Beyazıt University</div>
+
+        <h3>Background</h3>
+        <p>
+          I am an Electrical and Electronics Engineer currently pursuing my M.Sc. at
+          Ankara Yıldırım Beyazıt University (AYBÜ). My academic and engineering work
+          sits at the intersection of digital hardware, communication systems, and
+          emerging computational paradigms. I aim to build a strong foundation that
+          combines rigorous analysis with practical implementation.
+        </p>
+
+        <h3>Research Interests</h3>
+        <p>
+          My primary research interests include quantum circuits and related modeling
+          approaches, FPGA-based digital system design, and advanced circuit design
+          methodologies. I am particularly interested in how modern hardware platforms
+          can accelerate computation and signal processing workflows, and how
+          design choices impact performance, robustness, and implementation complexity.
+        </p>
+        <p>
+          I also focus on advanced optoelectronic applications and optical fiber
+          communication systems, where I explore device/system concepts and signal
+          integrity considerations. These domains motivate practical questions around
+          modulation, detection, noise behavior, and end-to-end system reliability.
+        </p>
+
+        <h3>Applied Engineering</h3>
+        <p>
+          Alongside academic research, I actively work with embedded systems,
+          circuit design, and applied engineering problems. I have hands-on
+          experience with smart home technologies, solar energy systems, and
+          automatic door and access control systems, combining field expertise
+          with solid engineering foundations. In parallel, I maintain an active
+          interest in amateur radio technologies and RF systems.
+        </p>
+
+        <h3>How I Work</h3>
+        <p>
+          I value structured engineering: clear requirements, measurable targets,
+          careful verification, and clean documentation. Whether the work is academic
+          or industrial, I prefer practical outcomes that can be tested, reproduced,
+          and improved iteratively. I write short technical notes to capture key
+          assumptions, decisions, and results for future reuse.
+        </p>
+
+        <h3>Focus Areas (Keywords)</h3>
+        <ul>
+          <li>Quantum Circuits • Modeling • Hardware-aware computation</li>
+          <li>FPGA • RTL Design • Verification • Timing-aware architectures</li>
+          <li>Advanced Optoelectronic Applications • Photonics fundamentals</li>
+          <li>Optical Fiber Communication • Modulation/Detection concepts • System view</li>
+          <li>Embedded Systems • Interface drivers • Hardware integration</li>
+          <li>RF & Amateur Radio • Practical RF systems perspective</li>
+          <li>Smart Home Systems • Solar Energy Systems • Automation/Access Control</li>
+        </ul>
+
+        <h3>Contact</h3>
+        <p>
+          For collaboration, questions, or academic discussions, you can reach me via the
+          contact page. I also share selected work and notes on this website.
+        </p>
+
+        <div class="row">
+          <a class="btn primary" href="./contact.html">Go to Contact</a>
+          <a class="btn ghost" href="./projects.html">View Projects</a>
+          <a class="btn ghost" href="./blog.html">Read the Blog</a>
+        </div>
+      </article>
+
+      <footer class="footer">
+        <div class="footer-left">© <span id="y"></span> Kerem Özcan</div>
+        <div class="footer-right">
+          <a class="link" href="./">Home</a>
+          <a class="link" href="./projects.html">Projects</a>
+          <a class="link" href="./contact.html">Contact</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
