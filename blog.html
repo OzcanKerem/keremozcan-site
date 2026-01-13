@@ -5,43 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog — Kerem Özcan</title>
   <meta name="description" content="Blog posts by Kerem Özcan." />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
+  <div class="bg"></div>
+
   <div class="container">
-    <div class="nav">
-      <div class="brand">
-        <a href="/">Kerem Özcan</a>
+    <header class="nav">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="brand-mark"></span>
+        <span class="brand-name">Kerem Özcan</span>
         <span class="badge">Blog</span>
-      </div>
-      <div class="links">
-        <a href="/">Home</a>
-        <a class="btn" href="mailto:you@example.com">Contact</a>
-      </div>
-    </div>
+      </a>
 
-    <div class="hero">
-      <h1>Blog</h1>
-      <p>Articles, notes, and project updates.</p>
+      <nav class="links" aria-label="Primary">
+        <a class="link" href="./index.html">Home</a>
+        <a class="link" href="./blog.html">Blog</a>
+        <a class="link" href="./projects.html">Projects</a>
+        <a class="btn" href="./contact.html">Contact</a>
+      </nav>
+    </header>
 
-      <div class="card">
-        <h2>Posts</h2>
-        <div class="list">
-          <a class="postlink" href="/posts/2026-01-first-post.html">
-            <div>
-              <strong>Why I Built This Blog</strong><br />
-              <small>Getting started and what to expect.</small>
-            </div>
-            <small>2026-01-12</small>
-          </a>
+    <main class="section">
+      <div class="section-head">
+        <h2>Blog</h2>
+        <p>Articles, notes, and project updates. Add a new post by creating a new HTML file in <code>posts/</code>.</p>
+      </div>
+
+      <div class="grid">
+        <a class="card postcard" href="./posts/2026-01-first-post.html">
+          <div class="postcard-top">
+            <span class="tag">General</span>
+            <span class="meta">2026-01-12</span>
+          </div>
+          <div class="postcard-title">Why I Built This Blog</div>
+          <div class="postcard-desc">
+            A lightweight place to publish engineering notes without monthly hosting.
+          </div>
+          <div class="postcard-cta">Read →</div>
+        </a>
+
+        <a class="card postcard" href="./posts/template.html">
+          <div class="postcard-top">
+            <span class="tag">Template</span>
+            <span class="meta">Use for new posts</span>
+          </div>
+          <div class="postcard-title">Post Template (Copy)</div>
+          <div class="postcard-desc">
+            Copy this file, rename it, and write your next article.
+          </div>
+          <div class="postcard-cta">Open →</div>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">© <span id="y"></span> Kerem Özcan</div>
+        <div class="footer-right">
+          <a class="link" href="./index.html">Home</a>
+          <a class="link" href="./projects.html">Projects</a>
+          <a class="link" href="./contact.html">Contact</a>
         </div>
-      </div>
-
-      <div class="footer">
-        <hr class="sep" />
-        <a href="/">← Back to home</a>
-      </div>
-    </div>
+      </footer>
+    </main>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
