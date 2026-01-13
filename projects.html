@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Kerem Özcan</title>
+  <meta name="description" content="Projects by Kerem Özcan." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <div class="container">
+    <header class="nav">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="brand-mark"></span>
+        <span class="brand-name">Kerem Özcan</span>
+        <span class="badge">Projects</span>
+      </a>
+
+      <nav class="links" aria-label="Primary">
+        <a class="link" href="./index.html">Home</a>
+        <a class="link" href="./blog.html">Blog</a>
+        <a class="link" href="./projects.html">Projects</a>
+        <a class="btn" href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Selected work. Replace each card with your real project details and links.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card project project-full">
+          <div class="project-top">
+            <span class="tag">FPGA</span>
+            <span class="meta">Design / Verification</span>
+          </div>
+          <div class="project-title">Digital Design Toolkit</div>
+          <div class="project-desc">
+            Reusable modules, testbenches, and reference implementations for practical RTL design.
+          </div>
+
+          <div class="kv">
+            <div class="kv-item">
+              <div class="kv-k">Role</div>
+              <div class="kv-v">RTL design, simulation, verification</div>
+            </div>
+            <div class="kv-item">
+              <div class="kv-k">Tech</div>
+              <div class="kv-v">Verilog/VHDL, testbenches, timing basics</div>
+            </div>
+            <div class="kv-item">
+              <div class="kv-k">Output</div>
+              <div class="kv-v">Documentation + reusable blocks</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <a class="btn ghost" href="#" onclick="return false;">Add details link</a>
+            <a class="btn ghost" href="#" onclick="return false;">Add repo link</a>
+          </div>
+        </div>
+
+        <div class="card project project-full">
+          <div class="project-top">
+            <span class="tag">Embedded</span>
+            <span class="meta">Firmware</span>
+          </div>
+          <div class="project-title">Device Interfaces</div>
+          <div class="project-desc">
+            Clean firmware patterns for I²C/SPI peripherals with small, readable abstractions.
+          </div>
+
+          <div class="kv">
+            <div class="kv-item">
+              <div class="kv-k">Role</div>
+              <div class="kv-v">Driver development, integration, documentation</div>
+            </div>
+            <div class="kv-item">
+              <div class="kv-k">Tech</div>
+              <div class="kv-v">C, I²C/SPI, EEPROM, logging</div>
+            </div>
+            <div class="kv-item">
+              <div class="kv-k">Output</div>
+              <div class="kv-v">Drivers + usage examples</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <a class="btn ghost" href="#" onclick="return false;">Add details link</a>
+            <a class="btn ghost" href="#" onclick="return false;">Add repo link</a>
+          </div>
+        </div>
+
+        <div class="card project project-full">
+          <div class="project-top">
+            <span class="tag">DSP</span>
+            <span class="meta">Analysis</span>
+          </div>
+          <div class="project-title">Signal Notes</div>
+          <div class="project-desc">
+            Notes on FFT/DFT, filtering, measurement, and practical signal processing workflows.
+          </div>
+
+          <div class="kv">
+            <div class="kv-item">
+              <div class="kv-k">Role</div>
+              <div class="kv-v">Analysis, simulation notes, write-ups</div>
+            </div>
+            <div class="kv-item">
+              <div class="kv-k">Tech</div>
+              <div class="kv-v">MATLAB/Simulink, Python, basic DSP</div>
+            </div>
+            <div class="kv-item">
+              <div class="kv-k">Output</div>
+              <div class="kv-v">Articles + reusable snippets</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <a class="btn ghost" href="./blog.html">Read related posts</a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">© <span id="y"></span> Kerem Özcan</div>
+        <div class="footer-right">
+          <a class="link" href="./index.html">Home</a>
+          <a class="link" href="./blog.html">Blog</a>
+          <a class="link" href="./contact.html">Contact</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
