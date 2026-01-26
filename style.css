@@ -1,14 +1,13 @@
 :root{
-  --bg: #0b0f14;              /* ana arka plan */
-  --bg-soft: #10161d;        /* kart içleri */
+  --bg: #0b0f14;
+  --bg-soft: #10161d;
   --bg-card: #0f141b;
   --border: rgba(255,255,255,0.08);
 
   --text: #e6edf3;
   --muted: #9aa4ad;
 
-  /* terminal-esintili vurgu */
-  --accent: #4fd1c5;         /* cyan-teal */
+  --accent: #4fd1c5;
   --accent-soft: rgba(79,209,197,0.15);
   --accent-border: rgba(79,209,197,0.35);
 
@@ -19,14 +18,18 @@
 *{ box-sizing:border-box }
 html,body{ margin:0; padding:0 }
 
-/* BODY */
+/* BODY — CUSTOM BACKGROUND */
 body{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
                "Liberation Mono","Courier New", monospace;
+
   background:
-    radial-gradient(900px 500px at 20% -10%, rgba(79,209,197,0.06), transparent 60%),
-    radial-gradient(800px 500px at 90% 10%, rgba(79,209,197,0.04), transparent 55%),
-    var(--bg);
+    linear-gradient(
+      rgba(11,15,20,0.88),
+      rgba(11,15,20,0.88)
+    ),
+    url("./assets/images/background/bg.jpg") center / cover no-repeat fixed;
+
   color: var(--text);
   line-height: 1.65;
 }
