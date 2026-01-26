@@ -4,18 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Kerem Özcan</title>
-  <meta name="description" content="Selected engineering and research projects by Kerem Özcan, grouped by domain." />
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="description" content="Projects grouped by domain: hardware, RF/SDR, FPGA & embedded, quantum, optics." />
   <link rel="icon" type="image/png" href="./favicon.png">
   <link rel="apple-touch-icon" href="./favicon.png">
-
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
   <div class="bg"></div>
 
   <div class="container">
-    <!-- NAV -->
     <header class="nav">
       <nav class="links" aria-label="Primary navigation">
         <a class="link" href="./">Home</a>
@@ -30,255 +28,189 @@
       <div class="section-head">
         <h2>Projects</h2>
         <p>
-          A structured view of recent work across hardware, RF/SDR, FPGA & embedded systems,
-          and communications. Each project includes a short summary and a placeholder link
-          for future write-ups or repositories.
+          A grouped view of selected projects. Some entries link to short case studies; others are placeholders
+          to be expanded over time.
         </p>
       </div>
 
-      <!-- HARDWARE PROJECTS -->
-      <section class="section">
-        <div class="section-head">
-          <h2>Hardware Projects</h2>
-          <p>Analog/digital circuits, PCB design, power electronics, and measurement hardware.</p>
-        </div>
-
-        <div class="grid">
-          <div class="card project project-full">
-            <div class="project-title">Op-Amp Audio Amplifier — PCB</div>
-            <div class="project-desc">
-              Analog audio amplifier design using operational amplifiers. Schematic capture,
-              PCB layout, and practical considerations (noise, grounding, stability).
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Files/Repo</a>
-            </div>
-          </div>
-
-          <div class="card project project-full">
-            <div class="project-title">DC–DC Converter — PCB</div>
-            <div class="project-desc">
-              DC–DC power converter design with attention to efficiency, switching behavior,
-              component selection, and PCB layout constraints.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Files/Repo</a>
-            </div>
-          </div>
-
-          <div class="card project project-full">
-            <div class="project-title">Oscilloscope Hardware — PCB</div>
-            <div class="project-desc">
-              Oscilloscope hardware design concepts: analog front-end, sampling considerations,
-              and PCB-level implementation constraints.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Files/Repo</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- RF / SDR PROJECTS -->
-      <section class="section">
-        <div class="section-head">
-          <h2>RF / SDR Projects</h2>
-          <p>Software-defined radio experiments, modulation/demodulation chains, and real-signal processing.</p>
-        </div>
-
-        <div class="grid">
-          <div class="card project project-full">
-            <div class="project-title">SDR Modulation & Demodulation (FM/AM/PSK/QAM)</div>
-            <div class="project-desc">
-              End-to-end modulation and demodulation experiments using SDR hardware, including
-              real-time signal acquisition, filtering, synchronization, and performance checks.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Demo/Repo</a>
-            </div>
-          </div>
-
-          <div class="card project project-full">
-            <div class="project-title">GNU Radio: Practical Modulation Techniques</div>
-            <div class="project-desc">
-              Implementation of analog and digital modulation blocks in GNU Radio; flowgraph design,
-              parameter tuning, and real-world RF signal handling with SDR devices.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Flowgraphs</a>
-            </div>
-          </div>
-
-          <div class="card project project-full">
-            <div class="project-title">Mini SDR Hardware — PCB</div>
-            <div class="project-desc">
-              Compact SDR platform design considerations: RF front-end constraints, layout sensitivity,
-              and system-level trade-offs for a small form-factor prototype.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Files/Repo</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FPGA & EMBEDDED PROJECTS -->
-      <section class="section">
-        <div class="section-head">
-          <h2>FPGA & Embedded Systems</h2>
-          <p>Digital hardware design, embedded firmware, system integration, and applied control.</p>
-        </div>
-
-        <div class="grid">
-          <div class="card project project-full">
-            <div class="project-title">LDPC Error-Correction Codes (MATLAB/Simulink Verification)</div>
-            <div class="project-desc">
-              LDPC-based error correction design with algorithm verification in MATLAB & Simulink.
-              Focus on BER performance, decoder behavior, and configuration comparisons.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Report</a>
-            </div>
-          </div>
-
-          <div class="card project project-full">
-            <div class="project-title">IoT-Based Smart Home Automation</div>
-            <div class="project-desc">
-              IoT-driven automation for controlling smart home devices; embedded hardware integration,
-              communications setup, and practical control logic design.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Architecture</a>
-            </div>
-          </div>
-
-          <div class="card project project-full">
-            <div class="project-title">Automation for Shutters/Blinds/Rolling Doors</div>
-            <div class="project-desc">
-              Control systems for shutters, blinds, rolling shutters, and garage door automation.
-              Real-world deployment constraints: reliability, safety, and maintainability.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-            </div>
-          </div>
-
-          <div class="card project project-full">
-            <div class="project-title">Internet-Enabled Automatic Door Receiver — PCB</div>
-            <div class="project-desc">
-              Automatic door receiver card with internet connectivity. Embedded control plus
-              interface design, built for stable field operation.
-            </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Files/Repo</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- QUANTUM PROJECTS -->
+      <!-- QUANTUM -->
       <section class="section">
         <div class="section-head">
           <h2>Quantum Projects</h2>
-          <p>Quantum circuit concepts, modeling, and hardware-aware thinking (growing portfolio).</p>
+          <p>Layout-driven design notes and modeling-focused exploration.</p>
         </div>
 
         <div class="grid">
-          <div class="card project project-full">
-            <div class="project-title">Quantum Circuits — Study Notes & Models</div>
+          <a class="card project project-full" href="./projects/qmetal-two-qubit-transmon.html">
+            <div class="project-top">
+              <span class="tag">Case Study</span>
+              <span class="meta">Qiskit Metal</span>
+            </div>
+            <div class="project-title">Two-Qubit Transmon System</div>
             <div class="project-desc">
-              I designed a two-qubit transmon system using Qiskit Metal, focusing on layout-level modeling and circuit-based interpretation of superconducting qubits. The design explores qubit geometry, capacitive coupling, and junction placement to achieve controlled interaction while maintaining symmetry and fabrication awareness. Through electromagnetic-informed layout decisions, the system provides a compact and analyzable platform for studying qubit–qubit coupling, frequency allocation, and readout-oriented design considerations.
+              Designed a two-qubit transmon layout to explore coupling intuition, geometry trade-offs, and practical layout decisions.
             </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Notes</a>
+            <div class="project-cta">Open →</div>
+          </a>
+
+          <div class="card project project-full">
+            <div class="project-top">
+              <span class="tag">In Progress</span>
+              <span class="meta">CMOS Direction</span>
             </div>
+            <div class="project-title">CMOS-Oriented Thesis Direction (Early Stage)</div>
+            <div class="project-desc">
+              Coursework-based preparation and topic exploration for a potential CMOS circuit design thesis.
+            </div>
+            <div class="project-cta">Planned →</div>
           </div>
         </div>
       </section>
 
-      <!-- OPTICAL / PHOTONICS PROJECTS -->
+      <!-- RF / SDR -->
       <section class="section">
         <div class="section-head">
-          <h2>Optical Fiber & Optoelectronics</h2>
-          <p>Optical communications fundamentals and advanced optoelectronic applications.</p>
+          <h2>RF / SDR Projects</h2>
+          <p>From simulated modulation chains to real-time observation with SDR hardware.</p>
         </div>
 
         <div class="grid">
-          <div class="card project project-full">
-            <div class="project-title">Optical Fiber Communication — System Notes</div>
+          <a class="card project project-full" href="./projects/sdr-modulation-gnu-radio.html">
+            <div class="project-top">
+              <span class="tag">Case Study</span>
+              <span class="meta">GNU Radio + RTL-SDR</span>
+            </div>
+            <div class="project-title">Modulation & Demodulation Experiments</div>
             <div class="project-desc">
-              Practical study notes on optical fiber links: modulation/detection concepts,
-              link budget thinking, noise considerations, and end-to-end system behavior.
+              Generated and observed real-time RF signals; evaluated FM/AM/PSK/QAM behaviors and selected suitable modulation for applied use.
             </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Notes</a>
-            </div>
-          </div>
+            <div class="project-cta">Open →</div>
+          </a>
 
           <div class="card project project-full">
-            <div class="project-title">Advanced Optoelectronic Applications — Research Notes</div>
+            <div class="project-top">
+              <span class="tag">Concept</span>
+              <span class="meta">PCB</span>
+            </div>
+            <div class="project-title">Mini SDR Hardware Design (PCB Concept)</div>
             <div class="project-desc">
-              Notes and summaries on advanced optoelectronic systems and devices,
-              emphasizing system-level interpretation and engineering constraints.
+              Compact SDR hardware thinking: RF front-end sensitivity, layout constraints, and system trade-offs.
             </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-              <a class="btn ghost" href="#">Notes</a>
-            </div>
+            <div class="project-cta">Planned →</div>
           </div>
         </div>
       </section>
 
-      <!-- SOFTWARE / SYSTEMS -->
+      <!-- FPGA & EMBEDDED -->
       <section class="section">
         <div class="section-head">
-          <h2>Software & Systems</h2>
-          <p>Practical systems work and infrastructure experiments.</p>
+          <h2>FPGA & Embedded Systems</h2>
+          <p>Verification-oriented workflows, embedded integration, and applied control.</p>
         </div>
 
         <div class="grid">
           <div class="card project project-full">
-            <div class="project-title">Linux-Based Media Server</div>
+            <div class="project-top">
+              <span class="tag">In Progress</span>
+              <span class="meta">MATLAB/Simulink</span>
+            </div>
+            <div class="project-title">LDPC Error-Correction Verification</div>
             <div class="project-desc">
-              Linux-based media server deployment: system configuration, networking,
-              and stable streaming setup for home-lab style usage.
+              MATLAB & Simulink verification and BER-focused evaluation (write-up postponed for now).
             </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
-            </div>
+            <div class="project-cta">Planned →</div>
           </div>
 
           <div class="card project project-full">
-            <div class="project-title">DFT & FFT Signal Analysis</div>
+            <div class="project-top">
+              <span class="tag">IoT</span>
+              <span class="meta">Automation</span>
+            </div>
+            <div class="project-title">IoT-Based Smart Home Automation</div>
             <div class="project-desc">
-              Practical implementations and comparisons of DFT and FFT workflows,
-              focusing on interpretation, windowing intuition, and analysis use-cases.
+              IoT-enabled control logic for smart home devices, with emphasis on integration and practical operation.
             </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
+            <div class="project-cta">Planned →</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OPTICS -->
+      <section class="section">
+        <div class="section-head">
+          <h2>Optoelectronics & Optical Fiber</h2>
+          <p>Graduate-level topic notes and system-level understanding.</p>
+        </div>
+
+        <div class="grid">
+          <div class="card project project-full">
+            <div class="project-top">
+              <span class="tag">Notes</span>
+              <span class="meta">Optical Fiber</span>
             </div>
+            <div class="project-title">Optical Fiber Communication — Study Notes</div>
+            <div class="project-desc">
+              Modulation/detection concepts, noise intuition, and end-to-end link thinking (to be published).
+            </div>
+            <div class="project-cta">Planned →</div>
           </div>
 
           <div class="card project project-full">
-            <div class="project-title">Phase-Locked Loop (PLL) — Design Notes</div>
+            <div class="project-top">
+              <span class="tag">Notes</span>
+              <span class="meta">Optoelectronics</span>
+            </div>
+            <div class="project-title">Advanced Optoelectronic Applications — Notes</div>
             <div class="project-desc">
-              PLL design and analysis notes: loop dynamics, stability intuition,
-              and frequency synthesis fundamentals for engineering practice.
+              Device and system-level perspective: how optoelectronic building blocks map into engineering constraints.
             </div>
-            <div class="row">
-              <a class="btn ghost" href="#">Details</a>
+            <div class="project-cta">Planned →</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HARDWARE -->
+      <section class="section">
+        <div class="section-head">
+          <h2>Hardware Projects</h2>
+          <p>PCB-level design thinking: analog, power, and measurement hardware.</p>
+        </div>
+
+        <div class="grid">
+          <div class="card project project-full">
+            <div class="project-top">
+              <span class="tag">PCB</span>
+              <span class="meta">Analog</span>
             </div>
+            <div class="project-title">Op-Amp Audio Amplifier PCB</div>
+            <div class="project-desc">
+              Analog amplifier design with layout considerations (noise, stability, grounding).
+            </div>
+            <div class="project-cta">Planned →</div>
+          </div>
+
+          <div class="card project project-full">
+            <div class="project-top">
+              <span class="tag">PCB</span>
+              <span class="meta">Power</span>
+            </div>
+            <div class="project-title">DC–DC Converter PCB</div>
+            <div class="project-desc">
+              Converter design with efficiency and switching behavior considerations.
+            </div>
+            <div class="project-cta">Planned →</div>
+          </div>
+
+          <div class="card project project-full">
+            <div class="project-top">
+              <span class="tag">PCB</span>
+              <span class="meta">Measurement</span>
+            </div>
+            <div class="project-title">Oscilloscope Hardware Concept</div>
+            <div class="project-desc">
+              Analog front-end, sampling concepts, and implementation constraints (concept stage).
+            </div>
+            <div class="project-cta">Planned →</div>
           </div>
         </div>
       </section>
@@ -287,7 +219,7 @@
         <div class="footer-left">© <span id="y"></span> Kerem Özcan</div>
         <div class="footer-right">
           <a class="link" href="./">Home</a>
-          <a class="link" href="./about.html">About</a>
+          <a class="link" href="./cv.html">CV</a>
           <a class="link" href="./contact.html">Contact</a>
         </div>
       </footer>
