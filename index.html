@@ -4,19 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kerem Özcan</title>
-  <meta name="description" content="Kerem Özcan — Electrical & Electronics Engineer. Research, engineering, and applied systems." />
-  <link rel="stylesheet" href="./style.css" />
-
+  <meta name="description" content="Kerem Özcan — Electrical & Electronics Engineer. Quantum circuits, CMOS, RF/SDR, DSP, and optical communications." />
   <link rel="icon" type="image/png" href="./favicon.png">
   <link rel="apple-touch-icon" href="./favicon.png">
- 
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
   <div class="bg"></div>
 
   <div class="container">
-    <!-- TOP NAVIGATION -->
     <header class="nav">
       <nav class="links" aria-label="Primary navigation">
         <a class="link" href="./">Home</a>
@@ -28,35 +25,28 @@
     </header>
 
     <main>
-      <!-- HERO SECTION -->
       <section class="hero">
         <div class="hero-left">
           <div class="eyebrow">
             <span class="dot"></span>
-            Electrical & Electronics Engineer
+            Electrical & Electronics Engineer — Ankara
           </div>
 
           <h1>
-            Designing systems<br>
-            across electronics,<br>
-            photonics, and computation
+            Research-minded engineering<br>
+            across quantum, CMOS, and communications
           </h1>
 
           <p class="lead">
-            I am an Electrical and Electronics Engineer currently pursuing my M.Sc. at
-            Ankara Yıldırım Beyazıt University. My work spans FPGA-based digital
-            design, quantum circuits, advanced optoelectronic applications, CMOS, digital integrated circuits and
-            optical fiber communication systems.
+            I am an Electrical and Electronics Engineer currently completing the coursework phase of my
+            graduate studies at Ankara Yıldırım Beyazıt University (AYBÜ). My interests span quantum
+            circuit design, CMOS circuit concepts, digital signal processing, and communication systems,
+            including advanced optoelectronic applications and optical fiber communication.
           </p>
 
           <p class="lead">
-            Alongside academic research, I actively work with embedded systems,
-            circuit design, and applied engineering problems. I also have hands-on
-            experience with smart home technologies, solar energy systems, and
-            automatic door and access control systems, combining
-            field expertise with solid engineering foundations. In parallel, I
-            maintain an active interest in amateur radio technologies and RF
-            systems.
+            Recently, I designed a two-qubit transmon system using Qiskit Metal and continued building
+            strong foundations in circuit-level thinking and practical system design.
           </p>
 
           <div class="cta">
@@ -65,96 +55,98 @@
           </div>
 
           <div class="chips">
-            <span class="chip">FPGA & Digital Design</span>
             <span class="chip">Quantum Circuits</span>
+            <span class="chip">CMOS</span>
+            <span class="chip">RF / SDR</span>
+            <span class="chip">DSP</span>
             <span class="chip">Optoelectronics</span>
             <span class="chip">Optical Fiber Communication</span>
-            <span class="chip">Embedded Systems</span>
-            <span class="chip">Amateur Radio</span>
           </div>
         </div>
 
-        <!-- RIGHT SIDE -->
         <div class="hero-right">
           <div class="card highlight">
-            <div class="card-title">Current Focus</div>
+            <div class="card-title">Now</div>
             <p>
-              Research-driven engineering with an emphasis on practical,
-              deployable systems — from laboratory-scale designs to real-world
-              industrial applications.
+              <strong>Primary focus:</strong> Quantum circuits (two-qubit transmon design) and CMOS fundamentals.
+              I am in the final coursework term of my M.Sc.; thesis topic may align with CMOS circuit design.
             </p>
+            <div class="row">
+              <a class="btn ghost" href="./projects.html">See recent work →</a>
+              <a class="btn ghost" href="./cv.html">CV →</a>
+            </div>
           </div>
 
           <div class="mini-grid">
             <div class="card mini">
-              <div class="mini-kicker">Academia</div>
-              <div class="mini-title">Graduate Research</div>
+              <div class="mini-kicker">Latest build</div>
+              <div class="mini-title">Two-Qubit Transmon (Qiskit Metal)</div>
               <div class="mini-text">
-                Quantum circuits, advanced optoelectronic systems, and signal
-                processing foundations.
+                Layout-driven superconducting qubit design with coupling-oriented geometry decisions.
               </div>
             </div>
 
             <div class="card mini">
-              <div class="mini-kicker">Industry</div>
-              <div class="mini-title">Applied Engineering</div>
+              <div class="mini-kicker">Hands-on</div>
+              <div class="mini-title">SDR Modulation Experiments</div>
               <div class="mini-text">
-                Embedded control, automation systems, and electronic hardware
-                integration.
+                GNU Radio + RTL-SDR workflows for real-time signal generation and observation.
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PROJECTS PREVIEW -->
       <section class="section">
         <div class="section-head">
-          <h2>Selected Areas</h2>
-          <p>
-            A snapshot of the domains I actively work in and write about.
-          </p>
+          <h2>Featured</h2>
+          <p>Short case studies and notes — kept minimal, practical, and reproducible.</p>
         </div>
 
         <div class="grid">
-          <div class="card project">
-            <div class="project-title">FPGA & Digital Systems</div>
-            <div class="project-desc">
-              RTL design, verification, timing-aware architectures, and reusable
-              digital building blocks.
+          <a class="card project project-full" href="./projects/qmetal-two-qubit-transmon.html">
+            <div class="project-top">
+              <span class="tag">Quantum</span>
+              <span class="meta">Qiskit Metal</span>
             </div>
-          </div>
-
-          <div class="card project">
-            <div class="project-title">Quantum & Photonics</div>
+            <div class="project-title">Two-Qubit Transmon Layout</div>
             <div class="project-desc">
-              Quantum circuit concepts, optoelectronic devices, and optical
-              communication fundamentals.
+              A compact two-qubit transmon system designed for coupling intuition and layout exploration.
             </div>
-          </div>
+            <div class="project-cta">Read →</div>
+          </a>
 
-          <div class="card project">
-            <div class="project-title">Embedded & Automation</div>
+          <a class="card project project-full" href="./projects/sdr-modulation-gnu-radio.html">
+            <div class="project-top">
+              <span class="tag">RF / SDR</span>
+              <span class="meta">GNU Radio + RTL-SDR</span>
+            </div>
+            <div class="project-title">Real-Time Modulation Experiments</div>
             <div class="project-desc">
-              Embedded firmware, control electronics, and automation systems with
-              real-world deployment experience.
+              FM/AM/PSK/QAM chains translated from simulation into real-world observation with SDR.
             </div>
-          </div>
-        </div>
+            <div class="project-cta">Read →</div>
+          </a>
 
-        <div style="margin-top:16px;">
-          <a class="btn ghost" href="./projects.html">Explore all projects →</a>
+          <div class="card project project-full">
+            <div class="project-top">
+              <span class="tag">Comms</span>
+              <span class="meta">In Progress</span>
+            </div>
+            <div class="project-title">LDPC Error-Correction Study</div>
+            <div class="project-desc">
+              MATLAB/Simulink verification and BER-focused evaluation (detailed write-up coming later).
+            </div>
+            <div class="project-cta">Planned →</div>
+          </div>
         </div>
       </section>
 
-      <!-- FOOTER -->
       <footer class="footer">
-        <div class="footer-left">
-          © <span id="y"></span> Kerem Özcan
-        </div>
+        <div class="footer-left">© <span id="y"></span> Kerem Özcan</div>
         <div class="footer-right">
           <a class="link" href="./projects.html">Projects</a>
-          <a class="link" href="./about.html">About</a>
+          <a class="link" href="./cv.html">CV</a>
           <a class="link" href="./contact.html">Contact</a>
         </div>
       </footer>
